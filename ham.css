@@ -1,0 +1,50 @@
+.hamburger {
+  padding: 10px;
+  background-color: #eeeeee;
+  box-shadow: 1px 1px 10px 0 rgba(32, 33, 36, 0.35);
+  border-radius: 10px;
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  display: none;
+}
+
+.hamburger img {
+  width: 40px;
+  height: 40px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .box {
+    display: none;
+    padding: 0 30px;
+    margin: 0;
+    position: fixed;
+    top: 120px;
+    right: 45px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 999;
+  }
+
+  /* .link {
+    float: none;
+    padding: 20px 0;
+    display: block;
+  }
+
+  .link:not(:last-child) {
+    margin: 0;
+    padding-bottom: 0;
+  } */
+
+  .hamburger:hover ~ .box,
+  .box:hover {
+    display: block;
+  }
+}
